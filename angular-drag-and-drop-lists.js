@@ -153,7 +153,7 @@ angular.module('dndLists', [])
                 break;
 
               case "none":
-                $parse($attrs.dndCanceled)(scope, {event: event});
+                $parse($attrs.dndCanceled)($scope, {event: event});
                 break;
             }
           });
